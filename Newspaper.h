@@ -20,8 +20,8 @@ public:
 
 	//Геттеры и сеттеры
 
-	string Get_Newspaper_Format();
-	bool Get_Newspaper_Chromaticity();
+	string Get_Newspaper_Format()const;
+	bool Get_Newspaper_Chromaticity()const;
 	void Set_Newspaper_Format(string Form);
 	void Set_Newspaper_Chromaticity(bool Color);
 
