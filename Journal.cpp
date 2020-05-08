@@ -11,15 +11,6 @@ Journal::Journal()
 }
 Journal::Journal(int nomber)
 {
-
-	if (nomber < 0)
-	{
-		while (nomber< 0)
-		{
-			cout << "EROR Wrong Year Include another - ";
-			cin >> nomber;
-		}
-	}
 	Journal_Nomber= nomber;
 }
 Journal::Journal(const Journal& other)
@@ -29,20 +20,12 @@ Journal::Journal(const Journal& other)
 
 //Геттеры и сеттеры
 
-int Journal::Get_Journal_Nomber()
+int Journal::Get_Journal_Nomber()const
 {
 	return Journal_Nomber;
 }
 void Journal::Set_Journal_Nomber(int nomber)
 {
-	if (nomber < 0)
-	{
-		while (nomber < 0)
-		{
-			cout << "EROR Wrong Year Include another - ";
-			cin >> nomber;
-		}
-	}
 	Journal_Nomber = nomber;
 }
 

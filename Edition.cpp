@@ -12,14 +12,7 @@ Edition::Edition()
 }
 Edition::Edition(int year, string Name)
 {
-	if (year < 0)
-	{
-		while (year < 0)
-		{
-			cout << "EROR Wrong Year Include another - ";
-			cin >> year;
-		}
-	}
+	
 	Year = year;
 	Edition_Name = Name;
 }
@@ -31,24 +24,17 @@ Edition::Edition(const Edition& other)
 
 //Геттеры и сеттеры
 
-int Edition::Get_Edition_Year()
+int Edition::Get_Edition_Year()const
 {
 	return Year;
 }
-string Edition::Get_Edition_Name()
+string Edition::Get_Edition_Name()const
 {
 	return Edition_Name;
 }
 void Edition::Set_Edition_Year(int year)
 {
-	if (year < 0)
-	{
-		while (year < 0)
-		{
-			cout << "EROR Wrong Year Include another - ";
-			cin >> year;
-		}
-	}
+	
 	Year = year;
 }
 void Edition::Set_Edition_Name(string Name)

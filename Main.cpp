@@ -23,7 +23,14 @@ void BookFun()
 		case 1:
 			cout << "Include Author | CountPage | Edition name | Edition Year" << endl;
 
-			cin >> a; cin >> b; cin >> c;cin >> d;
+			cin >> a; cin >> b; cin >> c; cin >> d;
+
+			if (b < 0 || d < 0)
+			{
+				cout << "Wrong number in CountPage or Year \n";
+				break;
+			}
+
 
 			Voina.Set_Author(a); Voina.Set_CountPage(b); Voina.Set_Edition_Name(c); Voina.Set_Edition_Year(d);
 
@@ -61,6 +68,12 @@ void NewspaperFun()
 
 			cin >> a; cin >> d; cin >> c; cin >> b;
 
+			if (d < 0)
+			{
+					cout << "Wrong number in Year\n";
+					break;
+			}
+
 			Klass.Set_Newspaper_Format(a); Klass.Set_Newspaper_Chromaticity(d); Klass.Set_Edition_Name(c); Klass.Set_Edition_Year(b);
 
 			break;
@@ -95,6 +108,12 @@ void JournalFun()
 			cout << "Include Journal_Nomber | Edition name | Edition Year" << endl;
 
 			cin >> a; cin >> c; cin >> d;
+
+			if (a < 0 || d < 0)
+			{
+				cout << "Wrong number in Journal_Nomber or Year\n";
+				break;
+			}
 
 			Strela.Set_Journal_Nomber(a); Strela.Set_Edition_Name(c); Strela.Set_Edition_Year(d);
 

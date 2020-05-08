@@ -10,14 +10,6 @@ Book::Book()
 }
 Book::Book(int Pages, string Name)
 {
-	if (Pages < 0)
-	{
-		while (Pages < 0)
-		{
-			cout << "EROR Wrong CountPage Include another - ";
-			cin >> Pages;
-		}
-	}
 	CountPage = Pages;
 	Author = Name;
 }
@@ -29,24 +21,16 @@ Book::Book(const Book& other)
 
 //Геттры и сеттеры 
 
-int Book::Get_CountPage()
+int Book::Get_CountPage()const
 {
 	return CountPage;
 }
-string Book::Get_Author()
+string Book::Get_Author()const
 {
 	return Author;
 }
 void Book::Set_CountPage(int Pages)
 {
-	if (Pages < 0)
-	{
-		while (Pages < 0)
-		{
-			cout << "EROR Wrong CountPage Include another - ";
-			cin >> Pages;
-		}
-	}
 	CountPage = Pages;
 }
 void Book::Set_Author(string Name)

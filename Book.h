@@ -19,14 +19,14 @@ public:
 
 	//Геттеры и сеттеры
 
-	int Get_CountPage();
-	string Get_Author();
+	int Get_CountPage () const;
+	string Get_Author() const;
 	void Set_CountPage(int Pages);
 	void Set_Author(string Name);
 
 	//Функции
 
-	void Print()override;  //Пример полиморфизма
+	void Print()override ;  //Пример полиморфизма
 
 	//Перегрузка операторов
 

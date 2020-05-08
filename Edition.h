@@ -19,8 +19,8 @@ public:
 
 	//Геттеры и сеттеры
 	
-	int Get_Edition_Year();
-	string Get_Edition_Name();
+	int Get_Edition_Year()const;
+	string Get_Edition_Name()const;
 	void Set_Edition_Year(int year);
 	void Set_Edition_Name(string Name);
 

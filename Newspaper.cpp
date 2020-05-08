@@ -25,11 +25,11 @@ Newspaper::Newspaper(const Newspaper& other)
 
 //Геттеры и сеттеры
 
-string Newspaper::Get_Newspaper_Format()
+string Newspaper::Get_Newspaper_Format()const
 {
 	return Format;
 }
-bool Newspaper::Get_Newspaper_Chromaticity()
+bool Newspaper::Get_Newspaper_Chromaticity()const
 {
 	return Chromaticity;
 }
