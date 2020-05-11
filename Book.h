@@ -21,7 +21,7 @@ public:
 
 	int Get_CountPage () const;
 	string Get_Author() const;
-	void Set_CountPage(int Pages);
+	bool Set_CountPage(int Pages);
 	void Set_Author(string Name);
 
 	//Функции

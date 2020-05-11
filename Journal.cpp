@@ -11,7 +11,7 @@ Journal::Journal()
 }
 Journal::Journal(int nomber)
 {
-	Journal_Nomber= nomber;
+	Set_Journal_Nomber(nomber);
 }
 Journal::Journal(const Journal& other)
 {
@@ -24,9 +24,15 @@ int Journal::Get_Journal_Nomber()const
 {
 	return Journal_Nomber;
 }
-void Journal::Set_Journal_Nomber(int nomber)
+bool Journal::Set_Journal_Nomber(int nomber)
 {
-	Journal_Nomber = nomber;
+	if (nomber < 0)
+	{
+		return false;
+	};
+	Journal_Nomber =nomber;
+	return true;
+
 }
 
 //Функции

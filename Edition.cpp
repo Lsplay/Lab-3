@@ -13,8 +13,8 @@ Edition::Edition()
 Edition::Edition(int year, string Name)
 {
 	
-	Year = year;
-	Edition_Name = Name;
+	Set_Edition_Year(year);
+	Set_Edition_Name(Name);
 }
 Edition::Edition(const Edition& other)
 {
@@ -32,10 +32,14 @@ string Edition::Get_Edition_Name()const
 {
 	return Edition_Name;
 }
-void Edition::Set_Edition_Year(int year)
+bool Edition::Set_Edition_Year(int year)
 {
-	
+	if (year < 0)
+	{
+		return false;
+	};
 	Year = year;
+	return true;
 }
 void Edition::Set_Edition_Name(string Name)
 {

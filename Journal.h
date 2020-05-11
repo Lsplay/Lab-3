@@ -20,7 +20,7 @@ public:
 	//Геттеры и сеттеры
 
 	int Get_Journal_Nomber()const;
-	void Set_Journal_Nomber(int nomber);
+	bool Set_Journal_Nomber(int nomber);
 
 	//Функции
 

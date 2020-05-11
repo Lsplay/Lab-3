@@ -21,7 +21,7 @@ public:
 	
 	int Get_Edition_Year()const;
 	string Get_Edition_Name()const;
-	void Set_Edition_Year(int year);
+	bool Set_Edition_Year(int year);
 	void Set_Edition_Name(string Name);
 
 	//Функции

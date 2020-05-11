@@ -14,8 +14,8 @@ Newspaper::Newspaper()
 }
 Newspaper::Newspaper(string Form, bool Color)
 {
-	Format = Form;
-	Chromaticity = Color;
+	Set_Newspaper_Format(Form);
+	Set_Newspaper_Chromaticity(Color);
 }
 Newspaper::Newspaper(const Newspaper& other)
 {
